@@ -1,0 +1,28 @@
+ecoli-climate-amr/
+├── README.md
+├── LICENSE
+├── CITATION.cff
+├── .gitignore
+├── 01_data_acquisition/
+│   ├── 01a_query_microbigge.R
+│   ├── 01b_query_isolates.R
+│   └── 01c_combine_raw.R
+├── 02_gene_filtering/
+│   ├── 02a_filter_bla.R
+│   └── 02b_remove_intrinsic.R
+├── 03_metadata/
+│   ├── 03a_parse_metadata.R
+│   └── 03b_filter_environmental.R
+├── 04_geocoding/
+│   ├── 04a_geocode_regions.R
+│   ├── 04b_country_centroids.R
+│   └── 04c_merge_coordinates.R
+├── 05_climate/
+│   ├── 05a_download_worldclim.R
+│   ├── 05b_extract_climate.R
+│   └── 05c_pivot_wide.R
+├── 06_modeling/
+│   ├── 06a_fit_models.R
+│   ├── 06b_model_comparison.R
+│   ├── 06c_firth_penalized.R
+│   └── 06d_prevalence_plots.R
